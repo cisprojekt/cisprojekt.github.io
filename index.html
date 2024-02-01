@@ -123,6 +123,10 @@
       p {
         font-size: 120%;
       }
+
+      #foobar {
+        display: none;
+      }
     </style>
     <script>
       window.onload = function () {
@@ -151,6 +155,8 @@
           confettiPiece.style.animationDelay = Math.random() * 4 + "s";
           confettiArea.appendChild(confettiPiece);
         }
+        var sample = document.getElementById("foobar");
+        sample.play();
       };
     </script>
   </head>
@@ -169,5 +175,6 @@
         ><button><img src="res/github.png" />Our GitHub</button></a
       >
     </div>
+    <audio id="foobar" src="music.mp3" preload="auto" type="audio/mpeg" />
   </body>
 </html>
